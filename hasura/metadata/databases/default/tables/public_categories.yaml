@@ -14,38 +14,43 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - id
-        - description
-        - name
         - created_at
+        - description
+        - icon
+        - id
+        - name
         - updated_at
 select_permissions:
   - role: anonymous
     permission:
       columns:
-        - id
-        - description
-        - name
         - created_at
+        - description
+        - icon
+        - id
+        - name
         - updated_at
       filter: {}
   - role: eaii-admin
     permission:
       columns:
-        - id
-        - description
-        - name
         - created_at
+        - description
+        - icon
+        - id
+        - name
         - updated_at
       filter: {}
+      allow_aggregations: true
 update_permissions:
   - role: eaii-admin
     permission:
       columns:
-        - id
-        - description
-        - name
         - created_at
+        - description
+        - icon
+        - id
+        - name
         - updated_at
       filter: {}
       check: {}

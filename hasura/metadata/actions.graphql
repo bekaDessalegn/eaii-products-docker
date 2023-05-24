@@ -1,12 +1,4 @@
 type Mutation {
-  imageUpload(
-    name: String!
-    type: String!
-    base64str: String!
-  ): ImageOutput
-}
-
-type Mutation {
   loginAdmin(
     email: String!
     password: String!

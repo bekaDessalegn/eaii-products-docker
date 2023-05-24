@@ -10,50 +10,51 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - id
         - category_name
-        - description
-        - image_path
-        - title
-        - url
         - created_at
+        - description
+        - id
+        - image_path
+        - link
+        - title
         - updated_at
 select_permissions:
   - role: anonymous
     permission:
       columns:
-        - id
         - category_name
-        - description
-        - image_path
-        - title
-        - url
         - created_at
+        - description
+        - id
+        - image_path
+        - link
+        - title
         - updated_at
       filter: {}
   - role: eaii-admin
     permission:
       columns:
-        - id
         - category_name
-        - description
-        - image_path
-        - title
-        - url
         - created_at
+        - description
+        - id
+        - image_path
+        - link
+        - title
         - updated_at
       filter: {}
+      allow_aggregations: true
 update_permissions:
   - role: eaii-admin
     permission:
       columns:
-        - id
         - category_name
-        - description
-        - image_path
-        - title
-        - url
         - created_at
+        - description
+        - id
+        - image_path
+        - link
+        - title
         - updated_at
       filter: {}
       check: {}

@@ -1,16 +1,16 @@
 actions:
-  - name: imageUpload
-    definition:
-      kind: synchronous
-      handler: http://localhost:3000
   - name: loginAdmin
     definition:
       kind: synchronous
       handler: http://host.docker.internal:4001/auth/login
+    permissions:
+      - role: anonymous
   - name: registerAdmin
     definition:
       kind: synchronous
       handler: http://host.docker.internal:4001/auth/register
+    permissions:
+      - role: eaii-admin
 custom_types:
   enums: []
   input_objects: []
